@@ -1,0 +1,13 @@
+.navi-bar {
+    background-color: #1d405d;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sessions {
+    padding: 15px;
+    cursor: pointer;
+    color: #F5FFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
