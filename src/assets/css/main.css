@@ -232,7 +232,6 @@
 }
 
 .testi .card::after {
-  content: url("../images/quote-left.svg");
   position: absolute;
   bottom: 15px;
   right: 25px;
