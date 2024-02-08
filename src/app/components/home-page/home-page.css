@@ -8,7 +8,6 @@
     height: 100%;
     justify-content: space-evenly;
     overflow-y: auto;
-    /* overflow: hidden; */
 }   
 
 .presentation{
@@ -16,7 +15,6 @@
     display: flex;
     width: 70%;
     margin-left: 10%;
-    /* margin-top: 15%; */
     margin-left: 10%;
 }
 .texts {
@@ -35,8 +33,6 @@
 
 
 .image {
-    /* width: 400px; */
     height: 300px;
     margin-left: 50px;
-    /* margin-right: 20%; */
 }
