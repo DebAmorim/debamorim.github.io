@@ -37,44 +37,6 @@
 
 
 
-
-/*-----------------------------------*\
-  #PRELOADER
-\*-----------------------------------*/
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--orange-red);
-  display: grid;
-  place-items: center;
-  z-index: 6;
-}
-
-.preloader.loaded { display: none; }
-
-.preloader-circle {
-  width: 60px;
-  height: 60px;
-  border: 8px solid transparent;
-  border-block-color: var(--white);
-  border-radius: var(--radius-circle);
-  animation: loading 1s linear infinite;
-}
-
-@keyframes loading {
-  0% { transform: rotate(0); }
-  100% { transform: rotate(1turn); }
-}
-
-
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -145,34 +107,7 @@
     }
   }
 
-  /*-----------------------------------*\
-  #require.css
-\*-----------------------------------*/
-
-/**
- *
- */
-
-/**
- * TABLE OF CONTENT
- *
- * Custom properties..............Global variables
- * Reset..........................Removed browser default style
- * Typography.....................Typography style
- * Reused.........................Reused classes
- * Preloader......................Preload style
- * Header.........................Header style
- * Footer.........................Footer style
- * Media queries..................Responsive for all devices
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
+ 
 
 :root {
 
@@ -418,143 +353,7 @@
   
   
   
-  /*-----------------------------------*\
-    #PRELOADER
-  \*-----------------------------------*/
-  
-  .preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--orange-red);
-    display: grid;
-    place-items: center;
-    z-index: 6;
-  }
-  
-  .preloader.loaded { display: none; }
-  
-  .preloader-circle {
-    width: 60px;
-    height: 60px;
-    border: 8px solid transparent;
-    border-block-color: var(--white);
-    border-radius: var(--radius-circle);
-    animation: loading 1s linear infinite;
-  }
-  
-  @keyframes loading {
-    0% { transform: rotate(0); }
-    100% { transform: rotate(1turn); }
-  }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #HEADER
-  \*-----------------------------------*/
-  
-  .header .btn { display: none; }
-  
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--white);
-    padding-block: 16px;
-    z-index: 4;
-    transition: var(--transition-1);
-  }
-  
-  .header.active { box-shadow: var(--shadow); }
-  
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-toggle-btn {
-    color: var(--jet);
-    font-size: 3.8rem;
-  }
-  
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--white);
-    border-block: 2px solid var(--jet);
-    transition: 0.25s var(--cubic-out);
-    transition-delay: 0.15s;
-    transform: scaleY(0);
-    transform-origin: top;
-    visibility: hidden;
-  }
-  
-  .navbar.active {
-    transform: scaleY(1);
-    visibility: visible;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
-  }
-  
-  .navbar > * {
-    opacity: 0;
-    transition: var(--transition-1);
-  }
-  
-  .navbar.active > * {
-    opacity: 1;
-    transition-delay: 0.4s;
-  }
-  
-  .navbar-item:not(:last-child) { border-block-end: 1px solid var(--jet_a10); }
-  
-  .navbar-link {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 16px 15px;
-    transition: var(--transition-1);
-  }
-  
-  .navbar-link:is(:hover, :focus-visible, .active) { color: var(--orange-red); }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #FOOTER
-  \*-----------------------------------*/
-  
-  .footer {
-    background-color: var(--jet);
-    color: var(--white_a75);
-    border-block-start: 1px solid var(--white_a10);
-    padding-block: 18px;
-  }
-  
-  .social-list {
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-    margin-block-end: 15px;
-  }
-  
-  .social-link { font-size: 1.8rem; }
-  
-  .social-link:is(:hover, :focus-visible) { color: var(--orange-red); }
-  
-  
-  
-  
+   
   
   /*-----------------------------------*\
     #MEDIA QUEREIS
@@ -570,8 +369,7 @@
   
   }
   
-  
-  
+
   
   
   /**
@@ -599,31 +397,8 @@
     .section { --section-padding: 100px; }
   
     .section-title { margin-block-end: 40px; }
-  
-  
-  
-    /**
-     * FOOTER
-     */
-  
-    .footer { padding-block: 25px;
-      /* position: fixed; */
-      bottom: 0px;
-   }
-  
-    .footer .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .social-list { margin-block-end: 0; }
-  
   }
-  
-  
-  
-  
+
   
   /**
    * responsive for large than 992px screen
@@ -649,50 +424,9 @@
   
     .section-title { margin-block-end: 60px; }
   
-  
-  
-    /**
-     * HEADER
-     */
-  
-    .nav-toggle-btn { display: none; }
-  
-    .navbar,
-    .navbar.active,
-    .navbar > * {
-      all: unset;
-      display: block;
-    }
-  
-    .navbar-list { display: flex; }
-  
-    .navbar-item:not(:last-child) { border-block-end: none; }
-  
-    .navbar-link { position: relative; }
-  
-    .navbar-link::after {
-      content: "";
-      position: absolute;
-      bottom: 5px;
-      left: 50%;
-      transform: translateX(-50%) scaleX(0);
-      transform-origin: right;
-      width: 80%;
-      height: 2px;
-      background-color: var(--orange-red);
-      transition: transform var(--transition-1);
-    }
-  
-    .navbar-link:is(:hover, :focus-visible, .active)::after {
-      transform: translateX(-50%) scaleX(1);
-      transform-origin: left;
-    }
-  
-    .header .btn { display: block; }
-  
   }
   
-  
+      
   /**
    * responsive for large than 1200px screen
    */
@@ -719,25 +453,6 @@
   
   }
   
-
-
-/*-----------------------------------*\
-  #CLIENT
-\*-----------------------------------*/
-
-.client {
-  background-color: var(--jet);
-  padding-block: 30px;
-}
-
-.client .slider-item { min-width: calc(50% - 15px); }
-
-.client .slider::-webkit-scrollbar { display: none; }
-
-
-
-
-
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -810,19 +525,5 @@
    */
 
   .skill .container { align-items: flex-start; }
-
-}
-
-/**
- * responsive for large than 1200px screen
- */
-
-@media (min-width: 1200px) {
-
-  /**
-   * ABOUT
-   */
-
-  .about-list { gap: 40px; }
 
 }
