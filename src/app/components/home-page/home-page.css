@@ -693,9 +693,6 @@
   }
   
   
-  
-  
-  
   /**
    * responsive for large than 1200px screen
    */
@@ -723,107 +720,6 @@
   }
   
 
-  /*-----------------------------------*\
-  #main.css
-\*-----------------------------------*/
-
-/**
- * 
- */
-
-/**
- * TABLE OF CONTENT
- *
- * COMPONENTS
- * Btn............................Buttons style
- * Slider.........................Slider style
- * Card...........................Cards style
- *
- * MAIN CONTENT
- * Header.........................Modify header style
- * Hero...........................Hero styles
- * Client.........................Client style
- * About..........................About style
- * Skills.........................Skills style
- * Cta............................Cta style
- * Testimonials...................Testimonials style
- * Media queries..................Responsive for all devices
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #COMPONENTS
-\*-----------------------------------*/
-
-/* @import url("./components/btn.css"); */
-/* @import url("./srcomponents/slider.css"); */
-/* @import url("./components/card.css"); */
-
-
-
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
-
-
-
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
-/* .hero {
-  position: relative;
-  overflow-y: auto;
-  background-color: var(--maximum-yellow-red_a10);
-  padding-block-start: calc(var(--section-padding) + 60px);
-  text-align: center;
-  overflow: hidden;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 10%;
-  bottom: 70%;
-  right: -75%;
-  background-color: var(--maximum-yellow-red_a40);
-  transform: rotate(-45deg);
-  border-radius: var(--radius-50);
-  z-index: -1;
-}
-
-.hero .container {
-  display: grid;
-  gap: 70px;
-}
-
-.hero-subtitle {
-  color: var(--jet);
-  text-transform: uppercase;
-  font-weight: var(--fw-600);
-  letter-spacing: 3px;
-  margin-block-end: 20px;
-}
-
-.hero-text { margin-block: 25px; }
-
-.hero .btn { margin-inline: auto; }
-
-.hero-banner {
-  margin-inline: auto;
-} */
-
-
-
-
 
 /*-----------------------------------*\
   #CLIENT
@@ -839,74 +735,6 @@
 .client .slider::-webkit-scrollbar { display: none; }
 
 
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-/* .about{
-  display: grid;
-}
-
-.about .container {
-  display: grid;
-  gap: 50px;
-}
-
-.about .section-text { margin-block: 25px 16px; }
-
-.about-list {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.about-list .list-text {
-  color: var(--jet);
-  font-weight: var(--fw-500);
-}
-
-.about-list .strong {
-  color: var(--orange-red);
-  display: block;
-}
-
-.about .wrapper {
-  margin-block-start: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 15px 25px;
-} */
-
-
-
-
-
-/*-----------------------------------*\
-  #SKILLS
-\*-----------------------------------*/
-
-/* .skill { padding-block-end: 0; }
-
-.skill .container,
-.skill-list { display: grid; margin-top: -10px;}
-
-.skill .container { gap: 50px; }
-
-.skill-list {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-
-.skill .card ion-icon { font-size: 3rem; }
-
-.skill .card .card-title {
-  color: var(--jet);
-  font-size: 1.6rem;
-  font-weight: var(--fw-500);
-} */
 
 
 
@@ -934,8 +762,6 @@
     margin-inline: auto;
   }
 
-
-
   /**
    * CTA
    */
@@ -943,33 +769,6 @@
   .cta .container { justify-content: space-between; }
 
 }
-
-
-
-
-
-/**
- * responsive for large than 768px screen
- */
-
-/* @media (min-width: 768px) { */
-
-  /**
-   * HERO
-   */
-
-  /* .hero-text { --fs-18: 2rem; }
-
-  .hero::after {
-    top: -20%;
-    bottom: 50%;
-    left: 48%;
-    right: -15%;
-  } */
-/* } */
-
-
-
 
 
 /**
@@ -1006,7 +805,6 @@
   .client .slider-item { min-width: calc(20% - 24px); }
 
 
-
   /**
    * SKILL
    */
@@ -1014,10 +812,6 @@
   .skill .container { align-items: flex-start; }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 1200px screen
