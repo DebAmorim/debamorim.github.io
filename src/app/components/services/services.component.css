@@ -1,0 +1,58 @@
+/*-----------------------------------*\
+  #SERVICES
+\*-----------------------------------*/
+
+.service { padding-block-start: calc(var(--section-padding) + 60px); }
+
+.service-list {
+  display: grid;
+  gap: 25px;
+}
+
+.card-title { margin-block-end: 10px; }
+
+.card ion-icon { font-size: 3.2rem; }
+
+.card .body-sm { color: var(--jet); }
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+  .service-list { grid-template-columns: 1fr 1fr; }
+
+}
+
+/**
+ * RESPONSIVE CONTAINER QUERY
+ */
+
+ .card-container { container-type: inline-size; }
+
+ @container (min-width: 500px) {
+   .card-lg,
+   .card-md { flex-direction: row; }
+ }
+ 
+ 
+ 
+ /**
+  * RESPONSIVE MEDIA QUERY
+  */
+ 
+ @media (min-width: 768px) {
+ 
+   .card-lg { padding: 35px; }
+ 
+   .card-md { padding: 40px; }
+ 
+   .card-sm { padding: 15px; }
+ 
+ }
