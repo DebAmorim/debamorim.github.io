@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "portfolio": {
+    "debamorim.github.io": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/portfolio",
+            "outputPath": "dist/debamorim.github.io",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -98,10 +98,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "portfolio:build:production"
+              "browserTarget": "debamorim.github.io:build:production"
             },
             "development": {
-              "browserTarget": "portfolio:build:development"
+              "browserTarget": "debamorim.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -109,7 +109,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "portfolio:build"
+            "browserTarget": "debamorim.github.io:build"
           }
         },
         "test": {
@@ -141,24 +141,24 @@
         "ionic-cordova-serve": {
           "builder": "@ionic/angular-toolkit:cordova-serve",
           "options": {
-            "cordovaBuildTarget": "portfolio:ionic-cordova-build",
-            "devServerTarget": "portfolio:serve"
+            "cordovaBuildTarget": "debamorim.github.io:ionic-cordova-build",
+            "devServerTarget": "debamorim.github.io:serve"
           },
           "configurations": {
             "production": {
-              "cordovaBuildTarget": "portfolio:ionic-cordova-build:production",
-              "devServerTarget": "portfolio:serve:production"
+              "cordovaBuildTarget": "debamorim.github.io:ionic-cordova-build:production",
+              "devServerTarget": "debamorim.github.io:serve:production"
             }
           }
         },
         "ionic-cordova-build": {
           "builder": "@ionic/angular-toolkit:cordova-build",
           "options": {
-            "browserTarget": "portfolio:build"
+            "browserTarget": "debamorim.github.io:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "portfolio:build:production"
+              "browserTarget": "debamorim.github.io:build:production"
             }
           }
         }
