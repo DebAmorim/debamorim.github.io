@@ -3,9 +3,6 @@
     <section class="section portfolio has-bg-image" aria-labelledby="portfolio-label"
     style="background-image: url('./assets/service-bg.png')">
       <div class="container">
-        <!-- <pre>
-          {{blogPost | json}}
-        </pre> -->
         <h2 class="section-title headline-md text-center" id="portfolio-label">{{blogPost.fields.title}}</h2>
         
         <div class="portfolio-card" style="display: block;">
@@ -22,43 +19,13 @@
             </div>
           </div>
 
-          <div class="card-content">
-            <p>{{blogPost.fields.content | json}}</p>
-            
-            <!-- <p class="card-text"> -->
-              <pre>
+          <div class="card-content" style="text-align: justify;" class="formatted-text">
 
-                {{blogPost.fields.content | json}}
-              </pre>
-            <!-- </p> -->
-            <a [routerLink]="[blogPost.sys.id]" class="btn btn-primary">Read more</a>
+            <div [innerHTML]="formatBody(blogPost.fields.content)"></div>
+
           </div>
       </div>
 
-        
-        <!-- <ul class="portfolio-list">
-          <div *ngFor="let blogPost of blogPosts.items; let i = index">
-            
-              <li>
-                <div class="portfolio-card">
-                  <div class="card-banner img-holder" style="--width: 800; --height: 540;">
-                    <img [src]="blogPost.fields.featuredImage.fields.file.url" width="800" height="540" loading="lazy"
-                      alt="Website Design for Marketing Agency Startup" class="img-cover">
-                    
-                  </div>
-                  <div class="card-content">
-                    <span class="chip label-md">{{blogPost.fields.updatedDate.slice(0, 10)}}</span>
-                    <h3 class="title-md">{{blogPost.fields.title}}</h3>
-                    <p>{{blogPost.fields.author}}</p>
-                    <p class="card-text">
-                      {{blogPost.fields.summary}}
-                    </p>
-                    <a [routerLink]="[blogPost.sys.id]" class="btn btn-primary">Read more</a>
-                  </div>
-                </div>
-              </li>            
-          </div>
-        </ul> -->
       </div>
     </section>
   </article>

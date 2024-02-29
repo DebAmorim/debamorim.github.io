@@ -65,7 +65,9 @@
                 "input": "src/theme/variables.css"
               }
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/marked/marked.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -98,10 +100,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "debamorim.github.io:build:production"
+              "buildTarget": "debamorim.github.io:build:production"
             },
             "development": {
-              "browserTarget": "debamorim.github.io:build:development"
+              "buildTarget": "debamorim.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -109,7 +111,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "debamorim.github.io:build"
+            "buildTarget": "debamorim.github.io:build"
           }
         },
         "test": {

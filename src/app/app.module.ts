@@ -1,4 +1,5 @@
 import { NgModule, Component } from '@angular/core';
+import { MarkdownModule } from 'ngx-markdown';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +32,7 @@ import { BlogPostComponent } from './components/blog-post/blog-post.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    MarkdownModule.forRoot(),
     IonicModule.forRoot({})
   ],
   providers: [],
