@@ -134,7 +134,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/debAmorim.github.io/",
+            "deployUrl": "/debAmorim.github.io/"
+
           }
         },
         "deploy": {
