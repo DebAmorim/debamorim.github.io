@@ -19,6 +19,7 @@
           "options": {
             "outputPath": "dist/debamorim.github.io",
             "index": "src/index.html",
+            "baseHref": "/debAmorim.github.io/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
